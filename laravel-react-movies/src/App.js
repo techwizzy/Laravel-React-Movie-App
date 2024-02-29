@@ -9,7 +9,7 @@ import MoviesList from './components/MoviesList';
 const App = () => {
   const [genres, setGenres] = useState({});
   const [popularMovies, setPopularMovies] = useState([]);
-  const apiKey = 'c1b5145cb207f88ed57eaed48dc169bc';
+  const apiKey = '';
 
   useEffect(() => {
     fetchGenres();
