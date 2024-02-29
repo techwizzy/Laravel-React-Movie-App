@@ -1,0 +1,115 @@
+
+.carousel-slide {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 70vh; /* Adjust the height as desired */
+  overflow: overflow; /* Ensures no part of the image spills outside the container */
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the space without skewing */
+  
+}
+
+.movie-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  color: #fff; /* Ensure text color contrasts well with the dark background */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left; /* Align text to the left */
+}
+
+.movie-details h3 {
+  margin-top: 0;
+}
+
+.rating-badge {
+  background-color: yellow; /* Yellow background for the badge */
+  color: black; /* Text color */
+  font-weight: bold; /* Make text bold */
+  padding: 5px 10px; /* Add some padding around the text */
+  border-radius: 10px; /* Rounded corners for the badge */
+  display: inline-block; /* Treat the badge as an inline element */
+  margin-top: 5px; /* Space above the badge */
+}
+
+.movie-details p {
+  margin: 4px 0; /* Adjust spacing around paragraphs for tighter layout */
+}
+
+.movie-details h3, .movie-details p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow makes text easier to read */
+}
+.movie-details {
+  z-index: 2; /* Ensures text overlay is above the image */
+}
+.movie {
+  background-color: #202020; /* Dark background for the card */
+  color: white; /* Light text color for contrast */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensure inner content adheres to border radius */
+  margin: 15px; /* Space around each card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+.movie-card {
+  background-color: #202020; /* Dark background for the card */
+  color: white; /* Light text color for contrast */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensure inner content adheres to border radius */
+  margin: 15px; /* Space around each card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+.movie-card:hover {
+  transform: scale(1.05); /* Slightly enlarge cards on hover */
+}
+
+.movie-card img {
+  width: 100%; /* Ensure image covers card width */
+  height:100%;
+  /* object-fit: contain; Cover the height of the image container without stretching */
+}
+
+.movie-details {
+  padding: 10px; /* Padding inside the card for text */
+}
+
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1200px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Gap between cards */
+  padding: 20px; /* Padding around the entire movie list for spacing from container edges */
+}
+
+/* Styling for genre titles */
+.genre-title {
+  color: #fff;
+  padding-left: 20px;
+}
+
+/* Ensure your .App or container class has sufficient padding */
+.App {
+  padding: 20px;
+  background-color: #141414; /* Netflix-like dark background */
+}
+
+/* Basic styling */
+body {
+  background-color: #141414;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  background-color: #e50914;
+  padding: 20px;
+  text-align: center;
+}
